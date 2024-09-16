@@ -27,21 +27,21 @@ RunAutoImageSquarer(argument)
             Return  ; Do nothing sif no directory is selected
         }
         emptyArgument := "manual"
-        commands := "python " q . "C:\Users\Admin\Documents\VS Code\Python\autoImageSquarer.py" . q " " q . emptyArgument . q " " q . pathManual . q . "`n"
+        commands := "python " q . "C:\Users\Admin\Documents\VS Code\Python\AutoImageSquarer - Python\AutoImageSquarer - Python.py" . q " " q . emptyArgument . q " " q . pathManual . q . "`n"
     }
     Else
     {
-        commands := "python " q . "C:\Users\Admin\Documents\VS Code\Python\autoImageSquarer.py" . q " " q . argument . q . "`n"
+        commands := "python " q . "C:\Users\Admin\Documents\VS Code\Python\AutoImageSquarer - Python\AutoImageSquarer - Python" . q " " q . argument . q . "`n"
     }
     Run, cmd /c %commands%,, Hide
 }
 
-; ========================================================================
+; ==================================================================================
 
 ; Author: Flipeador 20180803
 ; Ori Code: https://www.autohotkey.com/boards/viewtopic.php?f=76&t=53136&p=231879
 
-; ========================================================================
+; ==================================================================================
 
 ; Displays a standard dialog that allows the user to select folder(s).
 ; Parameters:
